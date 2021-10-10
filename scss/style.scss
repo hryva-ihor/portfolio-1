@@ -1,5 +1,35 @@
 @import "_nullstyle";
+//
+//     font-family: 'Baloo 2', cursive;
+//     font-family: 'Nunito', sans-serif;
+//
+body{
+    background-image: url(/img/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
 
+}
+// ...vvvvvv./////////////////////////////////////////////
+$ff1: 'Baloo 2';
+$ff2: 'Nunito', sans-serif;
+$fs-nav-link: 16px;
+$title-col: #25334E;
+$paragraph-col: #686868;
+$btn-fs: 20px;
+// $fs-nav-logo-title: 36px;
+//vvvvvv /////////////////////////////////////////////////////
+@mixin paragraph-style-text {
+    font-family: $ff2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170%;
+}
 
 
 
@@ -25,12 +55,17 @@
     }
 }
 #toTop::before{
-    content: '▲';
+    content: 'UP';
+    font-family: $ff1;
     color: white;
-    font-size: 30px;
+    font-size: 16px;
     line-height: 40px;
 }
-
+@import "_icomoon";
 @import "_block__header";
+@import "_block__home";
+@import "_block__indicators";
+@import "_block__why-mainan";
+
 @import "_block__footer";
 @import "_media";
